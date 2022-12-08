@@ -2,15 +2,36 @@
   import Header from "./components/Header/Header.svelte";
   import MainContent from "./components/MainContent/MainContent.svelte";
   import Sidebar from "./components/MainContent/Sidebar.svelte";
-  let isOpen = false;
+  import Search from "./components/Search/Search.svelte";
+  let isOpenSidebar = false;
+  let isOpenSearch = false;
   function toggleSidebar() {
-    isOpen = !isOpen;
+    isOpenSidebar = !isOpenSidebar;
+  }
+  function toggleSearch() {
+    isOpenSearch = !isOpenSearch;
+  }
+  function funnyFunc(event) {
+    if(event.target.id == "searchModal")
+    toggleSearch()
   }
 </script>
-
-<Header toggleSidebar={toggleSidebar} duration="350ms" />
-{#if isOpen}
-<Sidebar toggleSidebar={toggleSidebar} />
+<svelte:window on:mousedown={funnyFunc} />
+<svelte:head>
+  {#if (isOpenSearch || isOpenSidebar)}
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+<Header toggleSidebar={toggleSidebar} toggleSearch={toggleSearch} duration="350ms" />
+{#if isOpenSidebar}
+<Sidebar toggleSidebar={toggleSidebar} toggleSearch={toggleSearch} />
+{/if}
+{#if isOpenSearch}
+  <Search />
 {/if}
 <div class="container mx-auto">
   <MainContent />

@@ -6,20 +6,20 @@
   export let duration = "200ms";
   export let offset = 0;
   export let toggleSidebar;
-
-  let headerClass = "showNavbar";
+  export let toggleSearch;
+  let headerClass = "show-navbar";
   let y = 0;
   let lastY = 0;
   function deriveClass(y, dy) {
     if (y < offset) {
-      return "hideNavbar";
+      return "hide-navbar";
     }
 
     if (dy < 0) {
-      return "hideNavbar";
+      return "hide-navbar";
     }
 
-    return "showNavbar";
+    return "show-navbar";
   }
 
   function updateClass(y) {
@@ -53,7 +53,7 @@
       <img src={logoSmall} class="h-11 pl-[16px] sm:pl-10" alt="logo" height="44" />
     </div>
     <div class="flex pr-12">
-      <button class="pr-10 sm:hidden">
+      <button on:click={toggleSearch} class="mr-10 sm:hidden">
         <img src={searchIcon} alt="click to search" height="24" width="24" />
       </button>
       <button

@@ -15,10 +15,13 @@
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg)
       brightness(102%) contrast(102%);
   }
-  .showNavbar {
+  .filter-gray {
+    filter: invert(28%) sepia(14%) saturate(0%) hue-rotate(200deg) brightness(96%) contrast(87%);
+  }
+  .show-navbar {
     transform: translateY(0%);
   }
-  .hideNavbar {
+  .hide-navbar {
     transform: translateY(-100%);
   }
   .sidebar-item {

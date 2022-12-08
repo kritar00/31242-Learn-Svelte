@@ -82,8 +82,41 @@ module.exports = {
           '800': '#5a5a5a',
           '900': '#4e4e4e',
         },
-
+        'wedgewood': {
+          '50': '#f2f9f9',
+          '100': '#ddeff0',
+          '200': '#bfe0e2',
+          '300': '#92cace',
+          '400': '#5faab1',
+          '500': '#438e96',
+          '600': '#3b757f',
+          '700': '#356169',
+          '800': '#325158',
+          '900': '#2d464c',
+        },
       },
+      animation: {
+        slideIn: 'slideIn 350ms ease',
+        slideOut: 'slideOut 350ms ease'
+      },
+      keyframes: {
+        slideIn: {
+          '0%': {
+            transform: 'translateX(-1000px)'
+          },
+          '100%': {
+            transform: 'translateX(0)'
+          }
+        },
+        slideOut: {
+          '0%': {
+            transform: 'translateX(0)'
+          },
+          '100%': {
+            transform: 'translateX(-1000px)'
+          }
+        }
+      }
     }
   },
   plugins: [],
