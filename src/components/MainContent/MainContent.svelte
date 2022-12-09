@@ -5,7 +5,7 @@
   import approvedIcon from "../../assets/tick.svg"
 </script>
 
-<div class="px-5 pt-[18px]">
+<div class="px-5 pt-[18px] 2xl:container">
   <section>
     <h1 class="text-[32px] font-bold">{@html $dataStore.mainTitle}</h1>
     <p class="text-[16px]">{$dataStore.p}</p>
@@ -41,12 +41,12 @@
         <svelte:fragment slot="subSection"
           >{#if section.subSection}
             {#each section.subSection as subSection}
-              <h2 class="text-xl font-bold mb-5">
+              <h2 class="text-xl font-bold mb-5 mt-5">
                 {subSection.subTitle}
               </h2>
-              <ul class="grid grid-rows-12 grid-flow-col gap-4 grid-cols-2">
+              <ul class="grid grid-flow-rows gap-4 grid-cols-2 lg:grid-cols-4">
                 {#each subSection.items as item}
-                  <li class="flex items-center"><span class="rounded-full bg-apple-400 flex-shrink-0 w-[18px] h-[18px] mr-2"><img class="filter-white w-[18px] h-[18px]" src="{approvedIcon}" alt="approved fats"></span>{@html item}</li>
+                  <li class="flex items-center"><span class="rounded-full bg-riptide-400 flex-shrink-0 w-[18px] h-[18px] mr-2"><img class="filter-white w-[18px] h-[18px]" src="{approvedIcon}" alt="approved fats"></span>{@html item}</li>
                 {/each}
               </ul>
             {/each}

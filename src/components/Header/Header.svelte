@@ -1,12 +1,12 @@
 <script>
   import logoSmall from "../../assets/logo-sm.svg";
+  import logoLarge from "../../assets/logo-lg.svg"
   import searchIcon from "../../assets/search.svg";
   import barsIcon from "../../assets/bars.svg";
   import dotsIcon from "../../assets/dots-menu.svg";
+  import { sharedVariables } from "../../stores/store";
   export let duration = "200ms";
   export let offset = 0;
-  export let toggleSidebar;
-  export let toggleSearch;
   let headerClass = "show-navbar";
   let y = 0;
   let lastY = 0;
@@ -47,13 +47,25 @@
       >View stories</a
     >
   </div>
-  <div class="flex justify-between py-6">
-    <div class="flex pl-12">
-      <button on:click={toggleSidebar}><img src={barsIcon} alt="" height="24" width="24" /></button>
-      <img src={logoSmall} class="h-11 pl-[16px] sm:pl-10" alt="logo" height="44" />
+  <div class="flex justify-between py-[17px]">
+    <div class="flex pl-12 flex-grow">
+      <button class="pr-[16px] extraMd:hidden extraLg:block" on:click={() => sharedVariables.setIsOpenSidebar()}><img src={barsIcon} alt="" height="24" width="24" /></button>
+      <img src={logoSmall} height="44" class="h-11 mr-5 extraLg:hidden" alt="logo" />
+      <img src={logoLarge} height="44" class="h-11 mr-5 hidden extraLg:block" alt="logo" />
+      <span
+          on:mousedown={() => sharedVariables.setIsOpenSearch()}
+          class="hidden sm:flex flex-grow max-w-[640px] h-full bg-silver-chalice-100 px-3 rounded-3xl"
+        >
+          <img src={searchIcon} width="20" height="20" alt="Search input" />
+          <input disabled
+            class="p-2 font-normal text-sm w-full bg-transparent"
+            type="text"
+            placeholder="Search health topics"
+          />
+        </span>
     </div>
-    <div class="flex pr-12">
-      <button on:click={toggleSearch} class="mr-10 sm:hidden">
+    <div class="flex pr-12 ml-4">
+      <button on:click={() => sharedVariables.setIsOpenSearch()} class="mr-10 sm:hidden">
         <img src={searchIcon} alt="click to search" height="24" width="24" />
       </button>
       <button
@@ -61,5 +73,27 @@
       >
     </div>
   </div>
+  <div class="items-center hidden extraMd:flex px-[30px]">
+        <button type='button' class="relative header-item text-wedgewood-500">
+          Keto<span class="w-full bg-wedgewood-500 h-[4px] absolute bottom-[-1px] rounded-sm left-0"></span>
+        </button>
+        <button type='button' class="header-item">
+          Video
+        </button>
+        <button href="/dummy-link" class="header-item">Membership</button>
+        <button href="/dummy-link" class="header-item">Quizzes</button>
+        <button href="/dummy-link" class="header-item">Recipes</button>
+        <button href="/dummy-link" class="header-item">Success Stories</button>
+        <button type='button' class="header-item">
+          Mini Courses
+        </button>
+        <button href="/dummy-link" class="header-item">Resources</button>
+        <button href="/dummy-link" class="header-item"
+          >Shop<span
+            class="bg-orange-600 text-white ml-1 py-[2px] px-1 rounded-3xl text-[9px]"
+            >SALE</span
+          ></button
+        >
+      </div>
   <hr class="border-t-[2px] w-11/12 border-silver-chalice-500☻ mx-auto">
 </header>

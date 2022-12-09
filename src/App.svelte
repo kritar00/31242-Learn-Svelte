@@ -3,22 +3,17 @@
   import MainContent from "./components/MainContent/MainContent.svelte";
   import Sidebar from "./components/MainContent/Sidebar.svelte";
   import Search from "./components/Search/Search.svelte";
-  let isOpenSidebar = false;
-  let isOpenSearch = false;
-  function toggleSidebar() {
-    isOpenSidebar = !isOpenSidebar;
-  }
-  function toggleSearch() {
-    isOpenSearch = !isOpenSearch;
-  }
-  function funnyFunc(event) {
+  import { sharedVariables } from "./stores/store";
+  function onClickOutsideOfModal(event) {
     if(event.target.id == "searchModal")
-    toggleSearch()
+    sharedVariables.setIsOpenSearch()
+    else if (event.target.id == "sidebarOverlay")
+    sharedVariables.setIsOpenSidebar()
   }
 </script>
-<svelte:window on:mousedown={funnyFunc} />
+<svelte:window on:mousedown={onClickOutsideOfModal} />
 <svelte:head>
-  {#if (isOpenSearch || isOpenSidebar)}
+  {#if ($sharedVariables.isOpenSearch || $sharedVariables.isOpenSidebar)}
     <style>
       body {
         overflow: hidden;
@@ -26,13 +21,13 @@
     </style>
   {/if}
 </svelte:head>
-<Header toggleSidebar={toggleSidebar} toggleSearch={toggleSearch} duration="350ms" />
-{#if isOpenSidebar}
-<Sidebar toggleSidebar={toggleSidebar} toggleSearch={toggleSearch} />
+<Header duration="350ms" />
+{#if $sharedVariables.isOpenSidebar}
+<Sidebar />
 {/if}
-{#if isOpenSearch}
+{#if $sharedVariables.isOpenSearch}
   <Search />
 {/if}
-<div class="container mx-auto">
+<div class="px-5 mx-auto">
   <MainContent />
 </div>

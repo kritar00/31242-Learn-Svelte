@@ -3,6 +3,11 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}', './*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      screens: {
+        "extraMd": '880px',
+        'extraLg': '1200px'
+
+      },
       fontFamily: {
         'roboto': ['Roboto', "sans-serif"]
       },
@@ -58,17 +63,17 @@ module.exports = {
           '800': '#0a712e',
           '900': '#0a5d29',
         },
-        'apple': {
-          '50': '#f2fbf2',
-          '100': '#e2f7e1',
-          '200': '#c4eec4',
-          '300': '#95e096',
-          '400': '#60c861',
-          '500': '#40bf42',
-          '600': '#2b8e2c',
-          '700': '#257027',
-          '800': '#225924',
-          '900': '#1d4a1f',
+        'riptide': {
+          '50': '#f0fdf6',
+          '100': '#ddfbeb',
+          '200': '#bcf6d7',
+          '300': '#76eaae',
+          '400': '#4ddb92',
+          '500': '#25c272',
+          '600': '#19a05b',
+          '700': '#177e4a',
+          '800': '#18633d',
+          '900': '#155234',
         },
         'silver-chalice': {
           '50': '#f8f8f8',
@@ -94,6 +99,19 @@ module.exports = {
           '800': '#325158',
           '900': '#2d464c',
         },
+        'outer-space': {
+          '50': '#f3f7f8',
+          '100': '#dfe9ee',
+          '200': '#c3d6de',
+          '300': '#9ab9c6',
+          '400': '#6994a7',
+          '500': '#4e788c',
+          '600': '#436477',
+          '700': '#3b5363',
+          '800': '#364854',
+          '900': '#2a353e',
+        },
+
       },
       animation: {
         slideIn: 'slideIn 350ms ease',
@@ -116,6 +134,15 @@ module.exports = {
             transform: 'translateX(-1000px)'
           }
         }
+      },
+      container: {
+          center: true,
+          screens: {
+            sm: "100%",
+            md: "100%",
+            lg: "1024px",
+            xl: "1192px",
+          }
       }
     }
   },
