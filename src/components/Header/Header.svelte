@@ -97,3 +97,6 @@
       </div>
   <hr class="border-t-[2px] w-11/12 border-silver-chalice-500☻ mx-auto">
 </header>
+{#if headerClass == 'hide-navbar'}
+  <button on:click={() => sharedVariables.setIsOpenSidebar()} class="hidden extraLg:block fixed ml-[39px] top-[67px] bg-white z-[60] block p-[10px] border border-silver-chalice-200 rounded-full" type="button"><img src="{barsIcon}" height="24" width="24" alt=""></button>
+  {/if}
