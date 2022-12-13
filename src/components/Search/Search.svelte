@@ -1,6 +1,6 @@
 <script>
-    import searchIcon from "../../assets/search.svg"
-    import crossIcon from "../../assets/cross.svg"
+    import searchIcon from "/assets/search.svg"
+    import crossIcon from "/assets/cross.svg"
 </script>
 
 <div id="searchModal" class="w-full h-full overflow-hidden bg-wedgewood-900/60 fixed z-[60] top-0 right-0 pt-[160px] px-4">

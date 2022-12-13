@@ -1,9 +1,9 @@
 <script>
-  import searchIcon from "../../assets/search.svg";
-  import crossIcon from "../../assets/cross.svg";
-  import rightIcon from "../../assets/right.svg";
-  import logoSmall from "../../assets/logo-sm.svg"
-  import { sharedVariables } from "../../stores/store";
+  import searchIcon from "/assets/search.svg";
+  import crossIcon from "/assets/cross.svg";
+  import rightIcon from "/assets/right.svg";
+  import logoSmall from "/assets/logo-sm.svg"
+  import { sharedVariables } from "../../../stores/store";
   function onMouseOpenSearch() {
     sharedVariables.setIsOpenSearch()
     sharedVariables.setIsOpenSidebar()

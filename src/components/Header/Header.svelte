@@ -1,9 +1,9 @@
 <script>
-  import logoSmall from "../../assets/logo-sm.svg";
-  import logoLarge from "../../assets/logo-lg.svg"
-  import searchIcon from "../../assets/search.svg";
-  import barsIcon from "../../assets/bars.svg";
-  import dotsIcon from "../../assets/dots-menu.svg";
+  import logoSmall from "/assets/logo-sm.svg";
+  import logoLarge from "/assets/logo-lg.svg"
+  import searchIcon from "/assets/search.svg";
+  import barsIcon from "/assets/bars.svg";
+  import dotsIcon from "/assets/dots-menu.svg";
   import { sharedVariables } from "../../stores/store";
   export let duration = "200ms";
   export let offset = 0;

@@ -236,5 +236,110 @@
                 "Stay away from canned vegetables. These products have been heavily processed to extend shelf life, have the least amount of nutrients, and can contain hidden carbs."
             ]
         }
+    ],
+    "HowTo": {
+        "title": "Delicious desserts at the end of the meal",
+        "recipes": [
+            {
+                "recipeTitle": "Almond Butter Fat Bombs Recipe",
+                "ingredients": [
+                    "Almond Butter - ¼ cup",
+                    "Coconut Oil - ¼ cup",
+                    "Cocoa Powder - 2 tablespoons, unsweetened",
+                    "Stevia - to taste, this recipe used 10 drops"
+                ],
+                "steps": [
+                    {
+                        "step": "Step 1",
+                        "p": "In a bowl, melt down almond butter and coconut oil. You can use the microwave or a double boiler and stir to make sure it is mixed thoroughly.",
+                        "image": "/assets/rep1-step1.webp"
+                    },
+                    {
+                        "step": "Step 2",
+                        "p": "Stir in cocoa powder and stevia. If possible, pour into a spouted container to avoid making a mess.",
+                        "image": "/assets/rep1-step2.webp"
+                    },
+                    {
+                        "step": "Step 3",
+                        "p": "Pour into silicone molds. Refrigerate for at least 30 mins before eating. Store in the refrigerator in an airtight container.",
+                        "image": "/assets/rep1-step3.webp"
+                    }
+                ]
+            },
+            {
+                "recipeTitle": "Kale Shake",
+                "ingredients": [
+                    "1 handful of kale",
+                    "10 drops of Liquid Stevia (berry)",
+                    "2 Tbs (heaping) coconut oil"
+                ],
+                "steps": [
+                    {
+                        "step":"Step 1",
+                        "p": "Add all ingredients to the blender",
+                        "image": "/assets/rep2-step1.webp"
+                    },
+                    {
+                        "step":"Step 2",
+                        "p": "Blend for 3 minutes.",
+                        "image": "/assets/rep2-step2.webp"
+                    },
+                    {
+                        "step":"Step 3",
+                        "p": "Drink up!",
+                        "image": "/assets/rep2-step3.webp"
+                    }
+                ]
+            }
+        ]
+    },
+    "FAQs": [
+        {
+            "Q": "1. What foods can I eat on keto?",
+            "A": "High-fat, low-carb foods are perfect keto foods that won\u2019t affect your blood sugar levels, keeping you in ketosis. Grass-fed beef, fatty fish and seafood, game meat, and low-carb veggies are foods you can eat on keto. Choose full-fat dairy like heavy cream, cottage cheese, and cream cheese, plain greek yogurt, and include plenty of good fats like olive oil and avocado oil. Nuts and seeds like macadamia nuts and sesame seeds are also excellent choices."
+        },
+        {
+            "Q": "2. What are the top 10 foods on keto?",
+            "A": "The top 10 foods to have on keto are shellfish, salmon, leafy greens, sardines, eggs, cruciferous vegetables, avocados, olives/olive oil, grass-fed beef, and nuts and seeds."
+        },
+        {
+            "Q": "3. What can I not eat when on keto?",
+            "A": "Avoid foods high in carbohydrates. These foods raise your blood sugar and will kick you out of ketosis. Avoid all sugar and syrups, bread, cereal, pasta, rice, pancakes, puddings, crackers, and biscuits. Stay away from most fruits and avoid starchy vegetables like potatoes, corn, and beets. Sweetened drinks like fruit juice, energy drinks, sports drinks, and sugar-laden coffees aren\u2019t keto-friendly."
+        },
+        {
+            "Q": "4. Can I have fruit on keto?",
+            "A": "While most fruits are high in carbs and not keto-friendly, berries are high in fiber, and small amounts won\u2019t push you out of ketosis. Blackberries, black currants, blueberries, and raspberries are great additions to your Healthy Keto diet."
+        },
+        {
+            "Q": "5. Can I have carbs on keto?",
+            "A": "You should avoid all high-carb foods on keto. To achieve and maintain ketosis, you must keep insulin levels balanced. Because carbohydrates raise your blood sugar and increase your insulin levels, it\u2019s crucial to keep your carb intake low, not exceeding 50 grams of net carbs daily."
+        }
+    ],
+    "LatestRecipes": [
+        {
+            "image": "/assets/latest-rep1.webp",
+            "type": "BREAKFAST",
+            "name": "Keto Savory Cheddar Waffles"
+        },
+        {
+            "image": "/assets/latest-rep2.webp",
+            "type": "KETO BREADS",
+            "name": "Keto Savory Cheddar Waffles"
+        },
+        {
+            "image": "/assets/latest-rep3.webp",
+            "type": "KETO BREADS",
+            "name": "Keto Savory Cheddar Waffles"
+        },
+        {
+            "image": "/assets/latest-rep4.webp",
+            "type": "KETO BREADS",
+            "name": "Keto Savory Cheddar Waffles"
+        },
+        {
+            "image": "/assets/latest-rep5.webp",
+            "type": "KETO BREADS",
+            "name": "Keto Savory Cheddar Waffles"
+        }
     ]
 }

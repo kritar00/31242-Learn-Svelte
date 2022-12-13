@@ -6,6 +6,7 @@ export const dataStore = writable(data)
 const {subscribe, set, update} = writable({
     isOpenSidebar: false,
     isOpenSearch: false,
+    isExpanded: true,
 })
 
 export const sharedVariables = {
@@ -17,6 +18,10 @@ export const sharedVariables = {
     }),
     setIsOpenSearch: (value) => update(self => {
         self.isOpenSearch = !self.isOpenSearch
+        return self
+    }),
+    setIsExpanded: (value) => update(self => {
+        self.isExpanded = value
         return self
     })
 }
