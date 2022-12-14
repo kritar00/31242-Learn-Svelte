@@ -2,41 +2,44 @@
   import { dataStore } from "../../../stores/store";
   let translate;
   let containerOffsetWidth;
-  let isAtStart = true;
-  let isAtEnd = false;
+  let isAtStart = false;
+  let isAtEnd = true;
   let currentOffset = 0;
   let value = 0;
   const translateOffset = (navigate) => {
-    console.log(containerOffsetWidth);
-    let spacing = containerOffsetWidth - 340;
-    if (navigate == 'right') value += 340;
-    if (value > spacing) {
-      value = 320 * 5 + 20 * 4 - containerOffsetWidth;
-      isAtStart = !isAtStart;
-      isAtEnd = !isAtEnd;
+    if (navigate == "right") {
+      isAtStart = true
+      value += 340;
+      if (value > 320 * 5 + 20 * 4 - containerOffsetWidth) {
+        value = 320 * 5 + 20 * 4 - containerOffsetWidth;
+        isAtEnd = !isAtEnd;
+      }
     }
-    if (navigate == 'left') value -= containerOffsetWidth;
-    if (value < 0) {
-      value = 0;
-      isAtStart = !isAtStart;
-      isAtEnd = !isAtEnd;
+    if (navigate == "left") {
+      value -= 340;
+      isAtEnd = true
+      if (value < 0) {
+        value = 0;
+        isAtStart = !isAtStart;
+      }
     }
+
     return value;
   };
+
   const handleClickNext = (value) => {
     translate = `transform: translateX(${-translateOffset(value)}px)`;
   };
   const handleClickPrev = (value) => {
     translate = `transform: translateX(${-translateOffset(value)}px)`;
   };
-  //   $: watchOffset = translateOffset(containerOffsetWidth);
 </script>
 
 <h2 class="font-bold text-[32px]">Latest Recipes</h2>
-{#if !isAtStart}
+{#if isAtStart}
   <button
     class="absolute left-[20px] top-1/2 z-40 bg-white p-4 rounded-full -translate-y-1/2"
-    on:click={() => handleClickPrev('left')}
+    on:click={() => handleClickPrev("left")}
     ><img
       width="15"
       height="15"
@@ -46,7 +49,7 @@
   >
 {/if}
 <div
-  bind:offsetWidth={containerOffsetWidth}
+  bind:clientWidth={containerOffsetWidth}
   style={translate}
   class="transition my-6 md:mt-8 duration-300 flex items-stretch space-x-5 w-full"
 >
@@ -60,10 +63,10 @@
     </div>
   {/each}
 </div>
-{#if !isAtEnd}
+{#if isAtEnd}
   <button
     class="absolute right-[20px] top-1/2 z-40 bg-white p-4 rounded-full -translate-y-1/2"
-    on:click={() => handleClickNext('right')}
+    on:click={() => handleClickNext("right")}
     ><img
       width="15"
       height="15"

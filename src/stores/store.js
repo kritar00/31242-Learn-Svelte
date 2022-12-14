@@ -7,6 +7,7 @@ const {subscribe, set, update} = writable({
     isOpenSidebar: false,
     isOpenSearch: false,
     isExpanded: true,
+    isExpandedDisclaimers: false,
 })
 
 export const sharedVariables = {
@@ -22,6 +23,10 @@ export const sharedVariables = {
     }),
     setIsExpanded: (value) => update(self => {
         self.isExpanded = value
+        return self
+    }),
+    setIsExpandedDisclaimers: () => update(self => {
+        self.isExpandedDisclaimers = !self.isExpandedDisclaimers
         return self
     })
 }

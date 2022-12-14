@@ -1,5 +1,6 @@
 <script>
-  import Header from "./components/Header/Header.svelte";
+  import Footer from "./components/Footer/Footer.svelte";
+import Header from "./components/Header/Header.svelte";
   import MainContent from "./components/MainContent/MainContent.svelte";
   import Sidebar from "./components/MainContent/Sidebar/Sidebar.svelte";
   import Search from "./components/Search/Search.svelte";
@@ -30,4 +31,7 @@
 {/if}
 <div class="px-5 mx-auto">
   <MainContent />
+</div>
+<div class="bg-silver-chalice-100">
+<Footer />
 </div>

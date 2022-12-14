@@ -1,3 +1,29 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('resize', function () {
+        observeBodyWidth()
+    });
+    function observeBodyWidth() {
+        if (window.innerWidth >= 920 && body.offsetWidth >= 920) {
+            slider(4);
+        } else if (window.innerWidth > 768 && body.offsetWidth > 768) {
+            slider(2);
+            body.style.marginLeft = null
+        } else {
+            slider(1);
+        }
+    }
+    new ResizeObserver(observeBodyWidth).observe(body)
+
+    if (media920.matches) {
+        slider(4);
+    } else if (media768.matches) {
+        slider(2);
+    } else {
+        slider(1);
+    }
+})
 function slider(itemDisplay) {
     let iterate4itemsClone = iterate4items
     let threeItemDisplay
@@ -12,19 +38,9 @@ function slider(itemDisplay) {
     let widthAllItem = threeItemWidth * clientItem.length
 
     projects.style.width = `${widthAllBox}px`
-    clients.style.width = `${widthAllItem}px`
-    news.style.width = `${widthAllItem}px`
     item.forEach(element => {
         element.style.marginRight = '20px'
         element.style.width = `${itemWidth - 20}px`
-    })
-    clientItem.forEach(element => {
-        element.style.marginRight = '20px'
-        element.style.width = `${threeItemWidth - 20}px`
-    })
-    newsItem.forEach(element => {
-        element.style.marginRight = '20px'
-        element.style.width = `${threeItemWidth - 20}px`
     })
     let spacing = widthAllBox - itemWidth * itemDisplay
     projects.style.transform = `translateX(0px)`;

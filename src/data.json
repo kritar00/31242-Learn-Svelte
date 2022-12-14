@@ -237,6 +237,26 @@
             ]
         }
     ],
+            "mealsExamples": {
+                "title": "Keto meal examples",
+                "meals": [
+                    {
+                        "image": "./assets/breakfast.webp",
+                        "name": "Breakfast",
+                        "p": "HEAVIER FAT AND PROTEIN <br>2-4 Eggs, cheese, hormone-free bacon, avocado"
+                    },
+                    {
+                        "image": "./assets/lunch.webp",
+                        "name": "Lunch",
+                        "p": "PROTEIN, FAT (3-6 ounces) <br>Animal Protein (non-lean) hamburger, fish, chicken (with skin) <br>Vegetables or salad (7cups)"
+                    },
+                    {
+                        "image": "./assets/dinner.webp",
+                        "name": "Dinner",
+                        "p": "PROTEIN (3-3 ounces) <br>VEGETABLE (2-3 cups)"
+                    }
+                ]
+            },
     "HowTo": {
         "title": "Delicious desserts at the end of the meal",
         "recipes": [
@@ -341,5 +361,9 @@
             "type": "KETO BREADS",
             "name": "Keto Savory Cheddar Waffles"
         }
+    ],
+    "disclaimers": [
+        "Disclaimer: The dietary and other substances, and\/or materials, equipment or devices discussed on this site may not have undergone evaluation and\/or testing by the United States Food and Drug Administration or like agency of any other country. Risks that might be determined by such testing are unknown.  <a class=\"font-bold text-gray-darkest hover:text-gray-darker\" href=\"\/legal\/earnings-disclaimer\">Click here<\/a> to read the full disclaimer text.",
+        "These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Information on this site is provided for informational purposes only, it is not meant to substitute medical advice provided by your physician or any other medical professional. You should not use the information contained on this site for diagnosing or treating a health problem, disease, or prescribing any medication. Please read product label before use. Best results are only achieved when combined with diet and exercise program. Results not typical for any or all claims."
     ]
 }

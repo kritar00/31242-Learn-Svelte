@@ -49,7 +49,7 @@
   </div>
   <div class="flex justify-between py-[17px]">
     <div class="flex pl-12 flex-grow">
-      <button class="pr-[16px] extraMd:hidden extraLg:block" on:click={() => sharedVariables.setIsOpenSidebar()}><img src={barsIcon} alt="" height="24" width="24" /></button>
+      <button class="pr-[16px] extraMd:hidden extraLg:block extraLg:px-[32px] extraLg:mr-[36px]" on:click={() => sharedVariables.setIsOpenSidebar()}><img src={barsIcon} alt="" height="24" width="24" /></button>
       <img src={logoSmall} height="44" class="h-11 mr-5 extraLg:hidden" alt="logo" />
       <img src={logoLarge} height="44" class="h-11 mr-5 hidden extraLg:block" alt="logo" />
       <span
@@ -73,6 +73,7 @@
       >
     </div>
   </div>
+  <div class="extraLg:ml-[136px]">
   <div class="items-center hidden extraMd:flex px-[30px]">
         <button type='button' class="relative header-item text-wedgewood-500">
           Keto<span class="w-full bg-wedgewood-500 h-[4px] absolute bottom-[-1px] rounded-sm left-0"></span>
@@ -95,8 +96,9 @@
           ></button
         >
       </div>
-  <hr class="border-t-[2px] w-11/12 border-silver-chalice-500☻ mx-auto">
+  <hr class="border-t-[2px] w-11/12 mx-auto extraLg:mr-[30px] overflow-hidden">
+  </div>
 </header>
 {#if headerClass == 'hide-navbar'}
-  <button on:click={() => sharedVariables.setIsOpenSidebar()} class="hidden extraLg:block fixed ml-[39px] top-[67px] bg-white z-[60] block p-[10px] border border-silver-chalice-200 rounded-full" type="button"><img src="{barsIcon}" height="24" width="24" alt=""></button>
+  <button on:click={() => sharedVariables.setIsOpenSidebar()} class="hidden extraLg:block fixed ml-[70px] top-[67px] bg-white z-[60] block p-[10px] border border-silver-chalice-200 rounded-full" type="button"><img src="{barsIcon}" height="24" width="24" alt=""></button>
   {/if}
