@@ -20,7 +20,7 @@
     {/if}
   </div>
   <div>
-    <div class="py-8 extraMd:flex items-center">
+    <div class="py-8 xmd:flex items-center">
       <img
         src="/assets/logo-lg.svg"
         alt="Dr. Berg's logo"
@@ -33,7 +33,7 @@
         {/each}
       </div>
     </div>
-    <div class="grid extraMd:grid-cols-4">
+    <div class="grid xmd:grid-cols-4">
     {#each $dataStore.footer.additionalInfos as item}
       <div class="mb-5">
         <p class="font-bold">{item.title}</p>

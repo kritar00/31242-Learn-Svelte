@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "extraMd": '880px',
-        'extraLg': '1200px'
+        "xmd": '880px',
+        'xlg': '1200px'
 
       },
       fontFamily: {

@@ -60,7 +60,7 @@
         >
         <img src="{logoSmall}" class="" alt="Page logo in sidebar" height="44">
       </div>
-      <div class="mt-5 pr-5 md:pl-[110px] extraMd:pl-[134px]">
+      <div class="mt-5 pr-5 md:pl-[110px] xmd:pl-[134px]">
         <p class="sidebar-item">
           Keto<span class="w-[44px] h-[44px] items-center flex justify-center"
             ><img src={rightIcon} alt="To Keto" /></span
