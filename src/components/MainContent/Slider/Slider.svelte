@@ -4,12 +4,13 @@
   let containerOffsetWidth;
   let isAtStart = false;
   let isAtEnd = true;
-  let currentOffset = 0;
   let value = 0;
+  let currentBarOffsetWidth;
   const translateOffset = (navigate) => {
     if (navigate == "right") {
       isAtStart = true
       value += 340;
+
       if (value > 320 * 5 + 20 * 4 - containerOffsetWidth) {
         value = 320 * 5 + 20 * 4 - containerOffsetWidth;
         isAtEnd = !isAtEnd;
@@ -33,6 +34,10 @@
   const handleClickPrev = (value) => {
     translate = `transform: translateX(${-translateOffset(value)}px)`;
   };
+  const updateScrollbarWidth =(offset) =>{
+    return `${(offset/(320 * 5 + 20 * 4))*100}%`
+  }
+  $:scrollbarWidth = updateScrollbarWidth(containerOffsetWidth)
 </script>
 
 <h2 class="font-bold text-[32px]">Latest Recipes</h2>
@@ -55,13 +60,16 @@
 >
   {#each $dataStore.LatestRecipes as item}
     <div class="min-w-[320px] max-w-[320px]">
-      <img src={item.image} alt="" />
+      <img src="/assets/latest-rep{item.image}.webp" alt="" />
       <span class="mt-4 mb-6 block">
         <p class="text-wedgewood-400">{item.type}</p>
         <p class="text-xl font-bold">{item.name}</p>
       </span>
     </div>
   {/each}
+</div>
+<div bind:offsetWidth={currentBarOffsetWidth} class="relative w-full h-[3px] bg-silver-chalice-100">
+  <span class="rounded-sm -top-[2px] absolute h-[4px] bg-silver-chalice-600" style:width={scrollbarWidth}></span>
 </div>
 {#if isAtEnd}
   <button

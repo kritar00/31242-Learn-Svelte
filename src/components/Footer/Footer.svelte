@@ -28,37 +28,21 @@
         height="44"
       />
       <div class="flex space-x-3">
-        <img width="32" src="/assets/facebook.svg" alt="" />
-        <img width="32" src="/assets/youtube.svg" alt="" />
-        <img width="32" src="/assets/twitter.svg" alt="" />
-        <img width="32" src="/assets/pinterest.svg" alt="" />
-        <img width="32" src="/assets/instagram.svg" alt="" />
+        {#each $dataStore.footer.images as image}
+            <img width="32" src="/assets/{image}.svg" alt="" />
+        {/each}
       </div>
     </div>
     <div class="grid extraMd:grid-cols-4">
+    {#each $dataStore.footer.additionalInfos as item}
       <div class="mb-5">
-        <p class="font-bold">About</p>
-        <p>Dr. Berg</p>
+        <p class="font-bold">{item.title}</p>
+        {#each item.info as info}
+            <p>{info}</p>
+        {/each}
         <p>Careers</p>
       </div>
-      <div class="mb-5">
-        <p class="font-bold">Our network</p>
-        <p>Dr. Berg Shop</p>
-        <p>Dr. Berg Courses</p>
-      </div>
-      <div class="mb-5">
-        <p class="font-bold">Support</p>
-        <p>Hours of operation</p>
-        <p>Contact us</p>
-        <p>Support Services</p>
-      </div>
-      <div class="mb-5">
-        <p class="font-bold">Legal</p>
-        <p>Terms and conditions</p>
-        <p>Privacy policy</p>
-        <p>Anti-spam</p>
-        <p>Acceptable use policy</p>
-      </div>
+      {/each}
     </div>
     <div class="flex gap-2 pt-[10px] sm:pt-5 pb-[30px]">
       <img src="/assets/appstore.png" alt="Download on Appstore" />

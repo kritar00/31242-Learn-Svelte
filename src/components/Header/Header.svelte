@@ -11,14 +11,9 @@
   let y = 0;
   let lastY = 0;
   function deriveClass(y, dy) {
-    if (y < offset) {
+    if (y < offset || dy < 0) {
       return "hide-navbar";
     }
-
-    if (dy < 0) {
-      return "hide-navbar";
-    }
-
     return "show-navbar";
   }
 
@@ -96,7 +91,7 @@
           ></button
         >
       </div>
-  <hr class="border-t-[2px] w-11/12 mx-auto extraLg:mr-[30px] overflow-hidden">
+  <hr class="border-t-[2px] w-11/12 mx-auto extraLg:ml-[30px] overflow-hidden">
   </div>
 </header>
 {#if headerClass == 'hide-navbar'}

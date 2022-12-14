@@ -1,10 +1,10 @@
 {
     "mainTitle": "Healthy Keto<sup>\u00AE<\/sup>-approved Food List: The Best Foods to Get into Ketosis",
-    "p": "Ketosis is a popular dieting approach, and for a good reason\u2014it works! If you\u2019re looking to follow a keto diet, you\u2019re in the right place. This Healthy Keto food list includes the best foods to help you stay in ketosis and lose weight.",
+    "paragraphs": "Ketosis is a popular dieting approach, and for a good reason\u2014it works! If you\u2019re looking to follow a keto diet, you\u2019re in the right place. This Healthy Keto food list includes the best foods to help you stay in ketosis and lose weight.",
     "sections": [
         {
             "title": "What is keto?",
-            "p": [
+            "paragraphs": [
                 "The ketogenic diet is a low-carb, moderate-protein, and high-fat diet that pushes your metabolism to burn fat instead of carbs for energy. ",
                 "As you break down fat, your liver creates large quantities of ketones, a type of acid and a very efficient energy source. <a href=\"\/blog\/tags\/ketones\" target=\"_blank\" class=\"item-link\">Ketones<\/a> enter your circulation to fuel your body\u2014this state is known as ketosis.",
                 "In fact, your heart, brain, and muscles prefer ketones as a source of energy compared to relying on sugars and carbohydrates.",
@@ -14,7 +14,7 @@
         },
         {
             "title": "What makes Healthy Keto different?",
-            "p": [
+            "paragraphs": [
                 "Scientists initially formulated the ketogenic diet to treat epilepsy and other neurological conditions. Being primarily a medical treatment, a focus on providing balanced and adequate nutrition was missing.",
                 "Being in ketosis is only one cornerstone of a healthy lifestyle. Humans are complex, and your health relies on many nutrients and building blocks.",
                 "Simply depending on a high-fat, low-carb diet is missing the bigger picture. Without a focus on nutrients, your keto diet could be low in nutrients but high in processed foods and products full of harmful trans fats and preservatives.",
@@ -32,7 +32,7 @@
         },
         {
             "title": "Keto-approved fat",
-            "p": [
+            "paragraphs": [
                 "Fat is your primary energy source on keto and having the right amount is essential. But to get the most out of your Healthy Keto diet, you must also understand which healthy fats to include and which to avoid.",
                 "Apart from providing energy, fat has many other benefits for your health. Fat digestion is complex and slow, meaning that high-fat meals will keep you fuller for longer, making fat a great tool if you want to lose weight. <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC2716748\/\" target=\"_blank\" class=\"item-link\">Research<\/a> confirms the benefits of the high-fat keto diet for weight loss.",
                 "Your body relies on fat to absorb fat-soluble nutrients (vitamins A, D, K, and E), control inflammation, and produce hormones like testosterone and estrogen. In a nutshell, fat is essential for your health.",
@@ -71,7 +71,7 @@
         },
         {
             "title": "Keto-approved protein",
-            "p": [
+            "paragraphs": [
                 "Although there are some exceptions to this rule, vegetables growing above the soil line generally contain fewer carbs than root vegetables that grow below the ground.",
                 "Luckily, animal protein is a \"complete protein\", providing all essential amino acids.",
                 "While you need protein, too much protein isn't great for keto. Protein, especially very lean choices, can cause a rise in insulin levels, kicking you out of ketosis.",
@@ -200,7 +200,7 @@
         },
         {
             "title": "Keto-approved nuts and seeds",
-            "p": [
+            "paragraphs": [
                 "You miss out on many health-promoting benefits if you don't include nuts and seeds in your keto regime. Nuts are nutrient-dense and rich in healthy fats and fiber. They support heart health and cognition, improve memory, and help your body fight infections and inflammation.",
                 "Keto-friendly nuts are rich in healthy monounsaturated fats and low in carbs. Nuts are high in fiber, support your digestive health, and contain vitamins and minerals linked to heart health.",
                 "This study indicates that regular nut consumption helps lower heart disease risk.",
@@ -226,7 +226,7 @@
         },
         {
             "title": "Keto-approved vegetables",
-            "p": [
+            "paragraphs": [
                 "Although there are some exceptions to this rule, vegetables growing above the soil line generally contain fewer carbs than root vegetables that grow below the ground.",
                 "Choose veggies that are low in carbs but rich in nutrients to keep you in ketosis and get optimal nutritional benefits.",
                 "Green leafy vegetables are low-carb nutritional powerhouses delivering fiber, vitamins, and minerals. They are perfect for Healthy Keto and should be a part of your meals as often as possible.",
@@ -243,17 +243,17 @@
                     {
                         "image": "./assets/breakfast.webp",
                         "name": "Breakfast",
-                        "p": "HEAVIER FAT AND PROTEIN <br>2-4 Eggs, cheese, hormone-free bacon, avocado"
+                        "paragraphs": "HEAVIER FAT AND PROTEIN <br>2-4 Eggs, cheese, hormone-free bacon, avocado"
                     },
                     {
                         "image": "./assets/lunch.webp",
                         "name": "Lunch",
-                        "p": "PROTEIN, FAT (3-6 ounces) <br>Animal Protein (non-lean) hamburger, fish, chicken (with skin) <br>Vegetables or salad (7cups)"
+                        "paragraphs": "PROTEIN, FAT (3-6 ounces) <br>Animal Protein (non-lean) hamburger, fish, chicken (with skin) <br>Vegetables or salad (7cups)"
                     },
                     {
                         "image": "./assets/dinner.webp",
                         "name": "Dinner",
-                        "p": "PROTEIN (3-3 ounces) <br>VEGETABLE (2-3 cups)"
+                        "paragraphs": "PROTEIN (3-3 ounces) <br>VEGETABLE (2-3 cups)"
                     }
                 ]
             },
@@ -271,17 +271,17 @@
                 "steps": [
                     {
                         "step": "Step 1",
-                        "p": "In a bowl, melt down almond butter and coconut oil. You can use the microwave or a double boiler and stir to make sure it is mixed thoroughly.",
+                        "paragraphs": "In a bowl, melt down almond butter and coconut oil. You can use the microwave or a double boiler and stir to make sure it is mixed thoroughly.",
                         "image": "/assets/rep1-step1.webp"
                     },
                     {
                         "step": "Step 2",
-                        "p": "Stir in cocoa powder and stevia. If possible, pour into a spouted container to avoid making a mess.",
+                        "paragraphs": "Stir in cocoa powder and stevia. If possible, pour into a spouted container to avoid making a mess.",
                         "image": "/assets/rep1-step2.webp"
                     },
                     {
                         "step": "Step 3",
-                        "p": "Pour into silicone molds. Refrigerate for at least 30 mins before eating. Store in the refrigerator in an airtight container.",
+                        "paragraphs": "Pour into silicone molds. Refrigerate for at least 30 mins before eating. Store in the refrigerator in an airtight container.",
                         "image": "/assets/rep1-step3.webp"
                     }
                 ]
@@ -296,17 +296,17 @@
                 "steps": [
                     {
                         "step":"Step 1",
-                        "p": "Add all ingredients to the blender",
+                        "paragraphs": "Add all ingredients to the blender",
                         "image": "/assets/rep2-step1.webp"
                     },
                     {
                         "step":"Step 2",
-                        "p": "Blend for 3 minutes.",
+                        "paragraphs": "Blend for 3 minutes.",
                         "image": "/assets/rep2-step2.webp"
                     },
                     {
                         "step":"Step 3",
-                        "p": "Drink up!",
+                        "paragraphs": "Drink up!",
                         "image": "/assets/rep2-step3.webp"
                     }
                 ]
@@ -315,49 +315,49 @@
     },
     "FAQs": [
         {
-            "Q": "1. What foods can I eat on keto?",
-            "A": "High-fat, low-carb foods are perfect keto foods that won\u2019t affect your blood sugar levels, keeping you in ketosis. Grass-fed beef, fatty fish and seafood, game meat, and low-carb veggies are foods you can eat on keto. Choose full-fat dairy like heavy cream, cottage cheese, and cream cheese, plain greek yogurt, and include plenty of good fats like olive oil and avocado oil. Nuts and seeds like macadamia nuts and sesame seeds are also excellent choices."
+            "question": "1. What foods can I eat on keto?",
+            "answer": "High-fat, low-carb foods are perfect keto foods that won\u2019t affect your blood sugar levels, keeping you in ketosis. Grass-fed beef, fatty fish and seafood, game meat, and low-carb veggies are foods you can eat on keto. Choose full-fat dairy like heavy cream, cottage cheese, and cream cheese, plain greek yogurt, and include plenty of good fats like olive oil and avocado oil. Nuts and seeds like macadamia nuts and sesame seeds are also excellent choices."
         },
         {
-            "Q": "2. What are the top 10 foods on keto?",
-            "A": "The top 10 foods to have on keto are shellfish, salmon, leafy greens, sardines, eggs, cruciferous vegetables, avocados, olives/olive oil, grass-fed beef, and nuts and seeds."
+            "question": "2. What are the top 10 foods on keto?",
+            "answer": "The top 10 foods to have on keto are shellfish, salmon, leafy greens, sardines, eggs, cruciferous vegetables, avocados, olives/olive oil, grass-fed beef, and nuts and seeds."
         },
         {
-            "Q": "3. What can I not eat when on keto?",
-            "A": "Avoid foods high in carbohydrates. These foods raise your blood sugar and will kick you out of ketosis. Avoid all sugar and syrups, bread, cereal, pasta, rice, pancakes, puddings, crackers, and biscuits. Stay away from most fruits and avoid starchy vegetables like potatoes, corn, and beets. Sweetened drinks like fruit juice, energy drinks, sports drinks, and sugar-laden coffees aren\u2019t keto-friendly."
+            "question": "3. What can I not eat when on keto?",
+            "answer": "Avoid foods high in carbohydrates. These foods raise your blood sugar and will kick you out of ketosis. Avoid all sugar and syrups, bread, cereal, pasta, rice, pancakes, puddings, crackers, and biscuits. Stay away from most fruits and avoid starchy vegetables like potatoes, corn, and beets. Sweetened drinks like fruit juice, energy drinks, sports drinks, and sugar-laden coffees aren\u2019t keto-friendly."
         },
         {
-            "Q": "4. Can I have fruit on keto?",
-            "A": "While most fruits are high in carbs and not keto-friendly, berries are high in fiber, and small amounts won\u2019t push you out of ketosis. Blackberries, black currants, blueberries, and raspberries are great additions to your Healthy Keto diet."
+            "question": "4. Can I have fruit on keto?",
+            "answer": "While most fruits are high in carbs and not keto-friendly, berries are high in fiber, and small amounts won\u2019t push you out of ketosis. Blackberries, black currants, blueberries, and raspberries are great additions to your Healthy Keto diet."
         },
         {
-            "Q": "5. Can I have carbs on keto?",
-            "A": "You should avoid all high-carb foods on keto. To achieve and maintain ketosis, you must keep insulin levels balanced. Because carbohydrates raise your blood sugar and increase your insulin levels, it\u2019s crucial to keep your carb intake low, not exceeding 50 grams of net carbs daily."
+            "question": "5. Can I have carbs on keto?",
+            "answer": "You should avoid all high-carb foods on keto. To achieve and maintain ketosis, you must keep insulin levels balanced. Because carbohydrates raise your blood sugar and increase your insulin levels, it\u2019s crucial to keep your carb intake low, not exceeding 50 grams of net carbs daily."
         }
     ],
     "LatestRecipes": [
         {
-            "image": "/assets/latest-rep1.webp",
+            "image": "1",
             "type": "BREAKFAST",
             "name": "Keto Savory Cheddar Waffles"
         },
         {
-            "image": "/assets/latest-rep2.webp",
+            "image": "2",
             "type": "KETO BREADS",
             "name": "Keto Savory Cheddar Waffles"
         },
         {
-            "image": "/assets/latest-rep3.webp",
+            "image": "3",
             "type": "KETO BREADS",
             "name": "Keto Savory Cheddar Waffles"
         },
         {
-            "image": "/assets/latest-rep4.webp",
+            "image": "4",
             "type": "KETO BREADS",
             "name": "Keto Savory Cheddar Waffles"
         },
         {
-            "image": "/assets/latest-rep5.webp",
+            "image": "5",
             "type": "KETO BREADS",
             "name": "Keto Savory Cheddar Waffles"
         }
@@ -365,5 +365,26 @@
     "disclaimers": [
         "Disclaimer: The dietary and other substances, and\/or materials, equipment or devices discussed on this site may not have undergone evaluation and\/or testing by the United States Food and Drug Administration or like agency of any other country. Risks that might be determined by such testing are unknown.  <a class=\"font-bold text-gray-darkest hover:text-gray-darker\" href=\"\/legal\/earnings-disclaimer\">Click here<\/a> to read the full disclaimer text.",
         "These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Information on this site is provided for informational purposes only, it is not meant to substitute medical advice provided by your physician or any other medical professional. You should not use the information contained on this site for diagnosing or treating a health problem, disease, or prescribing any medication. Please read product label before use. Best results are only achieved when combined with diet and exercise program. Results not typical for any or all claims."
-    ]
+    ],
+    "footer": {
+        "images": ["facebook", "youtube", "twitter", "pinterest", "instagram"],
+        "additionalInfos": [
+            {
+                "title": "About",
+                "info": ["Dr. Berg", "Careers"]
+            },
+            {
+                "title": "Our network",
+                "info": ["Dr. Berg Shop", "Dr. Berg Courses"]
+            },
+            {
+                "title": "Support",
+                "info": ["Hours of operation", "Contact us", "Support Services"]
+            },
+            {
+                "title": "Legal",
+                "info": ["Terms and conditions", "Privacy policy", "Anti-spam", "Acceptable use policy"]
+            }
+        ]
+    }
 }
